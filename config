@@ -1,0 +1,8 @@
+theme = artix-ice
+background-opacity = 0.6
+
+cursor-style = block
+cursor-style-blink = false
+
+keybind = super+enter=new_window
+keybind = super+q=close_surface
