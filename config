@@ -1,11 +1,17 @@
-theme = artix-ice
+theme = "rose-pine"
 background-opacity = 0.7
 
 cursor-style = block
 cursor-style-blink = false
 
-keybind = super+enter=new_window
+keybind = global:super+enter=new_window
 keybind = super+q=close_window
 
 gtk-single-instance = true
 
+keybind = ctrl+shift+k=goto_split:previous
+keybind = ctrl+shift+j=goto_split:next
+keybind = shift+enter=text:\x1b\r
+
+keybind = ctrl+shift+u=scroll_page_fractional:-0.5
+keybind = ctrl+shift+d=scroll_page_fractional:0.5
