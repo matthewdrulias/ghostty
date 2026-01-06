@@ -4,6 +4,9 @@ background-opacity = 0.7
 cursor-style = block
 cursor-style-blink = false
 
+font-size = 16
+window-inherit-font-size = true
+
 keybind = global:super+enter=new_window
 keybind = super+q=close_window
 
@@ -15,3 +18,4 @@ keybind = shift+enter=text:\x1b\r
 
 keybind = ctrl+shift+u=scroll_page_fractional:-0.5
 keybind = ctrl+shift+d=scroll_page_fractional:0.5
+
