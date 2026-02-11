@@ -1,5 +1,6 @@
-theme = "Artix-Ice"
-background-opacity = 0.7
+theme = "GruvboxDarkHard"
+background = #0a0a0a
+background-opacity = .8
 
 cursor-style = block
 cursor-style-blink = false
@@ -8,9 +9,14 @@ font-size = 16
 window-inherit-font-size = true
 
 keybind = global:super+enter=new_window
-keybind = super+q=close_window
+keybind = super+q=close_surface
+# keybind = super+shift+q=quit
 
-gtk-single-instance = true
+# Quit app when last window closes (no zombie processes)
+quit-after-last-window-closed = true
+
+# Don't ask for confirmation when closing (tmux handles sessions)
+confirm-close-surface = false
 
 keybind = ctrl+shift+k=goto_split:previous
 keybind = ctrl+shift+j=goto_split:next
@@ -19,3 +25,8 @@ keybind = shift+enter=text:\x1b\r
 keybind = ctrl+shift+u=scroll_page_fractional:-0.5
 keybind = ctrl+shift+d=scroll_page_fractional:0.5
 
+keybind = super+f=new_split:left
+
+# Copy/paste: only intercept if action is performable, else pass through to app
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard
